@@ -1,7 +1,8 @@
-function volume_sphere() {
+function volume_sphere(event) {
     //Write your code here
-	let item = parseFloat(document.getElementById("radius").value);
-  let vol = document.getElementById("volume");
+	event.preventDefault();
+	let item = parseFloat(document.getElementById('radius').value);
+  let vol = document.getElementById('volume');
   vol.inputMode.value = none;
 	let result =  4/3 * Math.PI*item *item*item;
   console.log(result);
